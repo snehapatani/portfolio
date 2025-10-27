@@ -1,49 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Shah - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Shah - Engineering Manager Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Sneha Shah</h1>
-        <p>Software Engineering Manager | Python • Java • Angular • Distributed Systems</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Strategic Engineering Leader with 10+ years experience building scalable, enterprise-grade systems...</p>
-    </section>
+<!-- Navigation -->
+<nav>
+  <div class="logo">Sneha Shah</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="assets/project1.png" alt="Project 1">
-            <h3>Scalable Data Platform</h3>
-            <p>Designed and led a distributed data platform processing 10M+ events/day...</p>
-        </div>
-        <div class="project">
-            <img src="assets/project2.png" alt="Project 2">
-            <h3>Social Media Analytics System</h3>
-            <p>Built a real-time analytics engine for social media insights...</p>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Building Scalable Systems, Leading High-Performing Teams</h1>
+    <p>Software Engineering Manager | Python • Java • Angular • Distributed Systems</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="assets/profile.jpg" alt="Sneha Shah">
+  </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: snehapatani@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/sneha-patani">linkedin.com/in/sneha-patani</a></p>
-    </section>
+<!-- About Section -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-text" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>Strategic Engineering Leader with 10+ years experience delivering scalable, enterprise-grade systems. Passionate about mentoring engineers and driving innovation.</p>
+      <div class="metrics">
+        <div><h3>12+</h3><p>Engineers Managed</p></div>
+        <div><h3>5+</h3><p>Enterprise Systems Delivered</p></div>
+        <div><h3>30%</h3><p>Reduced Production Incidents</p></div>
+      </div>
+    </div>
+    <div class="about-image" data-aos="fade-left">
+      <img src="assets/profile.jpg" alt="Sneha Shah">
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>© 2025 Sneha Shah</p>
-    </footer>
+<!-- Projects Section -->
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" data-aos="fade-up">
+      <img src="assets/project1.png" alt="Scalable Data Platform">
+      <h3>Scalable Data Platform</h3>
+      <p>Distributed system processing 10M+ events/day. Tech: Java, Kafka, Spring Boot, AWS.</p>
+      <div class="tech-tags">
+        <span>Java</span><span>Kafka</span><span>AWS</span>
+      </div>
+      <a href="https://github.com/snehapatani/project1" class="btn-link">View on GitHub</a>
+    </div>
+    <div class="project-card" data-aos="fade-up">
+      <img src="assets/project2.png" alt="Social Media Analytics">
+      <h3>Social Media Analytics</h3>
+      <p>Real-time analytics engine for social media insights. Tech: Python, Flask, Angular, MongoDB.</p>
+      <div class="tech-tags">
+        <span>Python</span><span>Flask</span><span>Angular</span>
+      </div>
+      <a href="https://github.com/snehapatani/project2" class="btn-link">View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2 data-aos="fade-up">Skills</h2>
+  <div class="skills-grid" data-aos="fade-up">
+    <div class="skill"><img src="assets/logos/python.png" alt="Python"><span>Python</span></div>
+    <div class="skill"><img src="assets/logos/java.png" alt="Java"><span>Java</span></div>
+    <div class="skill"><img src="assets/logos/angular.png" alt="Angular"><span>Angular</span></div>
+    <div class="skill"><img src="assets/logos/aws.png" alt="AWS"><span>AWS</span></div>
+    <div class="skill"><img src="assets/logos/kafka.png" alt="Kafka"><span>Kafka</span></div>
+    <div class="skill"><img src="assets/logos/docker.png" alt="Docker"><span>Docker</span></div>
+  </div>
+</section>
+
+<!-- Leadership & Impact Section -->
+<section id="leadership">
+  <h2 data-aos="fade-up">Leadership & Impact</h2>
+  <div class="leadership-cards">
+    <div class="card" data-aos="fade-up"><h3>Team Management</h3><p>Led cross-functional teams of 8–12 engineers.</p></div>
+    <div class="card" data-aos="fade-up"><h3>Process Improvement</h3><p>Reduced production incidents by 30% with better CI/CD and reviews.</p></div>
+    <div class="card" data-aos="fade-up"><h3>Mentorship</h3><p>Conducted workshops and mentored junior engineers.</p></div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2 data-aos="fade-up">Contact</h2>
+  <p data-aos="fade-up">Email: <a href="mailto:snehapatani@gmail.com">snehapatani@gmail.com</a></p>
+  <p data-aos="fade-up">LinkedIn: <a href="https://linkedin.com/in/sneha-patani">linkedin.com/in/sneha-patani</a></p>
+  <p data-aos="fade-up">GitHub: <a href="https://github.com/snehapatani">github.com/snehapatani</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Sneha Shah</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+</script>
 </body>
 </html>
