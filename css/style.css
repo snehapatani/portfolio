@@ -10,6 +10,31 @@ nav ul li { margin-left:2rem; }
 nav ul li a { color:white; text-decoration:none; transition:0.3s; }
 nav ul li a:hover { color:#2563eb; }
 
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;         /* allows items to go to next line */
+    justify-content: center; /* center horizontally */
+    gap: 1rem;               /* spacing between items */
+    margin-top: 0.5rem;
+  }
+
+  nav ul li {
+    margin-left: 0;          /* remove default spacing */
+    margin-bottom: 0.5rem;   /* optional spacing for wrapped items */
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;      /* slightly smaller text for narrow screens */
+  }
+}
+
 /* Hero */
 #hero { display:flex; justify-content:space-between; align-items:center; padding:100px 50px; background:linear-gradient(135deg,#1f2937,#2563eb); color:white; flex-wrap:wrap; }
 .hero-content { max-width:600px; }
@@ -26,11 +51,93 @@ section { max-width:1000px; margin:80px auto; padding:0 20px; }
 section h2 { font-size:2rem; margin-bottom:2rem; text-align:center; color:#1f2937; }
 
 /* About Section */
-.about-container { display:flex; justify-content:space-between; flex-wrap:wrap; gap:2rem; align-items:center; }
-.about-text { flex:1; }
-.about-image img { width:300px; border-radius:10px; }
-.metrics { display:flex; gap:2rem; margin-top:1rem; }
-.metrics div { text-align:center; }
+
+.about-section {
+  background: #f7f7f7;
+  padding: 80px 20px;
+}
+
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-image {
+  flex: 0 0 200px; /* smaller image */
+  text-align: center;
+}
+
+.about-image img {
+  width: 180px;   /* smaller width */
+  height: 180px;  /* smaller height */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2563eb;
+}
+
+/* Metrics as single row below */
+.metrics-cards {
+  display: flex;
+  justify-content: center;      /* center horizontally */
+  gap: 1rem;                    /* space between cards */
+  margin-top: 2.5rem;
+  flex-wrap: wrap;              /* wrap on small screens */
+}
+
+.metric-card {
+  flex: 1 1 150px;              /* flexible width, min 150px */
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.metric-card h3 {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.metric-card p {
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .about-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .metrics-cards {
+    justify-content: center;
+  }
+}
+
+
 
 /* Projects */
 .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
