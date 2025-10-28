@@ -10,26 +10,28 @@
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-  <div class="logo">Sneha Shah</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#leadership">Leadership</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <!-- Header -->
+<header>
+ <!-- Navigation -->
+  <nav>
+    <div class="logo">Sneha Shah</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+    </ul>
+  </nav>
+</header>
+
 
 <!-- Hero Section -->
 <section id="hero">
   <div class="hero-content">
     <h1>Building Scalable Systems, Leading High-Performing Teams</h1>
-    <p>Software Engineering Manager | Python • Java • Angular • Distributed Systems</p>
+    <p>Software Engineering Manager <br> Python • Java • Angular • Distributed Systems</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="#contact" class="btn-secondary">Contact Me</a>
     </div>
   </div>
   <div class="hero-image">
@@ -103,23 +105,45 @@
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2 data-aos="fade-up">Contact</h2>
-  <p data-aos="fade-up">Email: <a href="mailto:snehapatani@gmail.com">snehapatani@gmail.com</a></p>
-  <p data-aos="fade-up">LinkedIn: <a href="https://linkedin.com/in/sneha-patani">linkedin.com/in/sneha-patani</a></p>
-  <p data-aos="fade-up">GitHub: <a href="https://github.com/snehapatani">github.com/snehapatani</a></p>
-</section>
 
-<!-- Footer -->
 <footer>
-  <p>© 2025 Sneha Shah</p>
+
+<div class="footer-content">
+    <p>© <span id="current-year"></span> Sneha Shah | All Rights Reserved</p>
+    <!-- contact-bar div here -->
+     <!-- Contact Bar -->
+  
+</div>
 </footer>
 
+<div class="sticky-contact-bar">
+
+    <a href="mailto:snehapatani@gmail.com" title="Email" class="contact-icon">
+      <img src="assets/icons/email.svg" alt="Email">
+    </a>
+
+    <a href="tel:+16693361884" title="Phone">
+       <img src="assets/icons/phone.svg" alt="Phone">
+    </a>
+
+    <a href="https://linkedin.com/in/sneha-patani" target="_blank" title="LinkedIn">
+    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://github.com/snehapatani" target="_blank" title="GitHub">
+      <img src="assets/icons/github.svg" alt="GitHub">
+    </a>
+</div>
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+</script>
+<script>
+  // Get the current year
+  const year = new Date().getFullYear();
+  // Set it inside the span
+  document.getElementById('current-year').textContent = year;
 </script>
 </body>
 </html>

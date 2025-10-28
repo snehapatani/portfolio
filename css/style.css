@@ -58,3 +58,38 @@ footer { text-align:center; padding:20px; background:#1f2937; color:white; margi
   .about-container { flex-direction:column; text-align:center; }
   .about-image img { margin:0 auto; }
 }
+
+.sticky-contact-bar {
+  position: fixed;
+  bottom: 20px;       /* distance from bottom */
+  right: 20px;        /* distance from right */
+  display: flex;
+  flex-direction: row;  /* stack horizontally */
+  gap: 10px;
+  background: transparent; /* optional, can remove */
+  z-index: 9999;
+}
+
+
+.sticky-contact-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #111827;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.sticky-contact-bar a:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.sticky-contact-bar a img {
+  width: 20px;
+  height: 20px;
+}
+
