@@ -1,188 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sneha Shah - Engineering Manager Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Shah - Engineering Manager Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Header -->
-<header>
- <!-- Navigation -->
-  <nav>
-    <div class="logo">Sneha Shah</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#leadership">Leadership</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">Sneha Shah</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-<!-- Hero Section -->
-<section id="hero">
-  <div class="hero-content">
-    <h1>Building Scalable Systems, Leading High-Performing Teams</h1>
-    <p>Software Engineering Manager <br> Python • Java • Angular • Distributed Systems</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn-primary">View Projects</a>
-    </div>
-  </div>
-  <div class="hero-image">
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Building Scalable Systems, Leading High-Performing Teams</h1>
+            <p>Software Engineering Manager <br> Python • Java • Angular • Distributed Systems</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+            </div>
+        </div>
+        <!---<div class="hero-image">
     <img src="assets/profile.jpg" alt="Sneha Shah">
-  </div>
-</section>
+  </div> -->
+    </section>
 
-<!-- About Section -->
-<section id="about" class="about-section">
-  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
 
-    <!-- Two-column layout: About text + profile -->
-    <div class="about-wrapper">
-      <!-- Text Content -->
-      <div class="about-text" data-aos="fade-right">
-        <h2>About Me</h2>
-        <p>
-          Strategic Software Engineering Manager with 10+ years of experience building 
-          <strong>scalable systems</strong> and leading <strong>high-performing engineering teams</strong>. 
-          Passionate about mentoring engineers, driving innovation, and delivering solutions that 
-          <strong>align with business goals</strong>.
-        </p>
-        <p>
-          Skilled in <strong>Python, Java, Angular, and cloud-native architectures</strong>, 
-          with a proven track record of improving reliability, reducing production incidents, 
-          and enabling teams to excel. I thrive at the intersection of <strong>technical excellence 
-          and strategic leadership</strong>, turning complex challenges into actionable results.
-        </p>
-      </div>
+            <!-- Two-column layout: About text + profile -->
+            <div class="about-wrapper">
+                <!-- Text Content -->
+                <div class="about-text" data-aos="fade-right">
+                    <h2>About Me</h2>
+                    <p>
+                        Strategic Software Engineering Manager with 10+ years of experience building
+                        <strong>scalable systems</strong> and leading <strong>high-performing engineering
+                            teams</strong>.
+                        Passionate about mentoring engineers, driving innovation, and delivering solutions that
+                        <strong>align with business goals</strong>.
+                    </p>
+                    <p>
+                        Skilled in <strong>Python, Java, Angular, and cloud-native architectures</strong>,
+                        with a proven track record of improving reliability, reducing production incidents,
+                        and enabling teams to excel. I thrive at the intersection of <strong>technical excellence
+                            and strategic leadership</strong>, turning complex challenges into actionable results.
+                    </p>
+                </div>
 
-      <!-- Profile Image -->
-      <div class="about-image" data-aos="fade-left">
-        <img src="assets/profile.jpg" alt="Sneha Shah">
-      </div>
+                <!-- Profile Image -->
+                <div class="about-image" data-aos="fade-left">
+                    <img src="assets/profile.jpg" alt="Sneha Shah">
+                </div>
+            </div>
+
+            <!-- Metrics below in single row -->
+
+            <div class="metrics-cards" data-aos="fade-up">
+                <div class="metric-card">
+                    <h3>12+</h3>
+                    <p>Engineers Mentored</p>
+                </div>
+                <div class="metric-card">
+                    <h3>5+</h3>
+                    <p>Enterprise Systems Delivered</p>
+                </div>
+                <div class="metric-card">
+                    <h3>30%</h3>
+                    <p>Reduced Production Incidents</p>
+                </div>
+                <div class="metric-card">
+                    <h3>8+</h3>
+                    <p>Projects Impacted</p>
+                </div>
+                <div class="metric-card">
+                    <h3>40%</h3>
+                    <p>Team Growth</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="projects-grid">
+            <section id="projects" class="projects-section">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="assets/tech/email.svg" alt="AI Email Summarizer">
+                        <h3>AI Email Summarizer for Managers</h3>
+                        <p>Developed an intelligent summarizer leveraging NLP and transformer models to condense lengthy
+                            emails into actionable summaries. Designed for executives to improve focus and
+                            decision-making efficiency.</p>
+                        <div class="tech-stack">
+                            <span class="tech-title">Tech Stack:</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Flask</span>
+                            <span class="tech-item">Streamlit</span>
+                            <span class="tech-item">OpenAI API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/snehapatani/engineering-insights-ai" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/tech/ProjectPredictor.svg" alt="Project Risk Predictor">
+                        <h3>Project Risk Predictor</h3>
+                        <p>Built a machine learning model to forecast project delivery risks based on historical
+                            metrics, sprint velocity, and issue trends — improving project planning accuracy by 30%.</p>
+                        <div class="tech-tags">
+                            <span>Python</span><span>scikit-learn</span><span>Flask</span><span>Data
+                                Visualization</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-title">Tech Stack:</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">scikit-learn</span>
+                            <span class="tech-item">Flask</span>
+                            <span class="tech-item">Data Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/snehapatani/engineering-insights-ai" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/tech/TechSkill.svg" alt="Tech Skills Tagger">
+                        <h3>Tech Skills Tagger</h3>
+                        <p>Designed an NLP pipeline that automatically extracts and classifies technical skills from
+                            resumes and project descriptions to streamline hiring and talent matching processes.</p>
+                        <div class="tech-stack">
+                            <span class="tech-title">Tech Stack:</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">spaCy</span>
+                            <span class="tech-item">FastAPI</span>
+                            <span class="tech-item">ML Pipeline</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/snehapatani/engineering-insights-ai" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/tech/Dashboard.svg" alt="AI-Powered Engineering Insights Dashboard">
+                        <h3>AI-Powered Engineering Insights Dashboard</h3>
+                        <p>
+                            An internal analytics tool that leverages NLP to summarize sprint updates,
+                            identify engineering bottlenecks, and visualize team performance using Git and Jira data.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-title">Tech Stack:</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Streamlit</span>
+                            <span class="tech-item">OpenAI API</span>
+                            <span class="tech-item">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/snehapatani/engineering-insights-ai" target="_blank"
+                                class="btn-link">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 data-aos="fade-up">Skills</h2>
+        <div class="skills-grid" data-aos="fade-up">
+            <div class="skill"><img src="assets/logos/python.svg" alt="Python"><span>Python</span></div>
+            <div class="skill"><img src="assets/logos/java.svg" alt="Java"><span>Java</span></div>
+            <div class="skill"><img src="assets/logos/angular.svg" alt="Angular"><span>Angular</span></div>
+            <div class="skill"><img src="assets/logos/js.svg" alt="Javascript"><span>Javascript</span></div>
+            <div class="skill"><img src="assets/logos/kafka.svg" alt="Kafka"><span>Kafka</span></div>
+        </div>
+    </section>
+
+    <!-- Leadership & Impact Section -->
+    <section id="leadership">
+        <h2 data-aos="fade-up">Leadership & Impact</h2>
+        <div class="leadership-cards">
+            <div class="card" data-aos="fade-up">
+                
+                <h3>Team Management</h3>
+                <p>Led cross-functional teams of 8–12 engineers, fostering collaboration and high performance.</p>
+            </div>
+            <div class="card" data-aos="fade-up">
+                
+                <h3>Process Improvement</h3>
+                <p>Reduced production incidents by 30% through improved CI/CD pipelines, code reviews, and automation.
+                </p>
+            </div>
+            <div class="card" data-aos="fade-up">
+                
+                <h3>Mentorship</h3>
+                <p>Conducted workshops and mentored junior engineers to accelerate skill development and team growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+
+        <div class="footer-content">
+            <p>© <span id="current-year"></span> Sneha Shah | All Rights Reserved</p>
+            <!-- contact-bar div here -->
+            <!-- Contact Bar -->
+
+        </div>
+    </footer>
+
+    <div class="sticky-contact-bar">
+
+        <a href="mailto:snehapatani@gmail.com" title="Email" class="contact-icon">
+            <img src="assets/icons/email.svg" alt="Email">
+        </a>
+
+        <a href="tel:+16693361884" title="Phone">
+            <img src="assets/icons/phone.svg" alt="Phone">
+        </a>
+
+        <a href="https://linkedin.com/in/sneha-patani" target="_blank" title="LinkedIn">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://github.com/snehapatani" target="_blank" title="GitHub">
+            <img src="assets/icons/github.svg" alt="GitHub">
+        </a>
     </div>
-
-    <!-- Metrics below in single row -->
-    
-<div class="metrics-cards" data-aos="fade-up">
-  <div class="metric-card">
-    <h3>12+</h3>
-    <p>Engineers Mentored</p>
-  </div>
-  <div class="metric-card">
-    <h3>5+</h3>
-    <p>Enterprise Systems Delivered</p>
-  </div>
-  <div class="metric-card">
-    <h3>30%</h3>
-    <p>Reduced Production Incidents</p>
-  </div>
-  <div class="metric-card">
-    <h3>8+</h3>
-    <p>Projects Impacted</p>
-  </div>
-  <div class="metric-card">
-    <h3>40%</h3>
-    <p>Team Growth</p>
-  </div>
-</div>
-
-
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
-  <h2 data-aos="fade-up">Projects</h2>
-  <div class="projects-grid">
-    <div class="project-card" data-aos="fade-up">
-      <img src="assets/project1.png" alt="Scalable Data Platform">
-      <h3>Scalable Data Platform</h3>
-      <p>Distributed system processing 10M+ events/day. Tech: Java, Kafka, Spring Boot, AWS.</p>
-      <div class="tech-tags">
-        <span>Java</span><span>Kafka</span><span>AWS</span>
-      </div>
-      <a href="https://github.com/snehapatani/project1" class="btn-link">View on GitHub</a>
-    </div>
-    <div class="project-card" data-aos="fade-up">
-      <img src="assets/project2.png" alt="Social Media Analytics">
-      <h3>Social Media Analytics</h3>
-      <p>Real-time analytics engine for social media insights. Tech: Python, Flask, Angular, MongoDB.</p>
-      <div class="tech-tags">
-        <span>Python</span><span>Flask</span><span>Angular</span>
-      </div>
-      <a href="https://github.com/snehapatani/project2" class="btn-link">View on GitHub</a>
-    </div>
-  </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills">
-  <h2 data-aos="fade-up">Skills</h2>
-  <div class="skills-grid" data-aos="fade-up">
-    <div class="skill"><img src="assets/logos/python.svg" alt="Python"><span>Python</span></div>
-    <div class="skill"><img src="assets/logos/java.svg" alt="Java"><span>Java</span></div>
-    <div class="skill"><img src="assets/logos/angular.svg" alt="Angular"><span>Angular</span></div>
-    <div class="skill"><img src="assets/logos/js.svg" alt="Javascript"><span>Javascript</span></div>
-    <div class="skill"><img src="assets/logos/kafka.svg" alt="Kafka"><span>Kafka</span></div>
-  </div>
-</section>
-
-<!-- Leadership & Impact Section -->
-<section id="leadership">
-  <h2 data-aos="fade-up">Leadership & Impact</h2>
-  <div class="leadership-cards">
-    <div class="card" data-aos="fade-up"><h3>Team Management</h3><p>Led cross-functional teams of 8–12 engineers.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Process Improvement</h3><p>Reduced production incidents by 30% with better CI/CD and reviews.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Mentorship</h3><p>Conducted workshops and mentored junior engineers.</p></div>
-  </div>
-</section>
-
-
-<footer>
-
-<div class="footer-content">
-    <p>© <span id="current-year"></span> Sneha Shah | All Rights Reserved</p>
-    <!-- contact-bar div here -->
-     <!-- Contact Bar -->
-  
-</div>
-</footer>
-
-<div class="sticky-contact-bar">
-
-    <a href="mailto:snehapatani@gmail.com" title="Email" class="contact-icon">
-      <img src="assets/icons/email.svg" alt="Email">
-    </a>
-
-    <a href="tel:+16693361884" title="Phone">
-       <img src="assets/icons/phone.svg" alt="Phone">
-    </a>
-
-    <a href="https://linkedin.com/in/sneha-patani" target="_blank" title="LinkedIn">
-    <img src="assets/icons/linkedin.svg" alt="LinkedIn">
-    </a>
-
-    <a href="https://github.com/snehapatani" target="_blank" title="GitHub">
-      <img src="assets/icons/github.svg" alt="GitHub">
-    </a>
-</div>
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
-</script>
-<script>
-  // Get the current year
-  const year = new Date().getFullYear();
-  // Set it inside the span
-  document.getElementById('current-year').textContent = year;
-</script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+    </script>
+    <script>
+        // Get the current year
+        const year = new Date().getFullYear();
+        // Set it inside the span
+        document.getElementById('current-year').textContent = year;
+    </script>
 </body>
+
 </html>
